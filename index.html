@@ -1,1 +1,112 @@
 <!--I won't be using codespaces - ikhokhelwa ubani leyonto vele?-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML for Programmers</title>
+    <link rel="stylesheet" href="style.css">
+    <!--You can embedd styles ka so-->
+    <style>
+        table {
+            color: blueviolet;
+        }
+        /*
+        1. Inline styles are bad practice since structure and style should be decoupled*/
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="https://www.linkedin.com/learning/html-for-programmers/">Course</a>
+    </nav>
+    <main>
+        <h1>HYPERTEXT MARKUP LANGUAGE</h1>
+        <ul>
+            <li>Elements & Tags</li>
+            <li>Attributes - characteristics for tags</li>
+            <li>Block vs Inline</li>
+            <li>Sementic elements improve your site's rankings</li>
+            <li>HTML is parsed permissively - it renders with syntax errors</li>
+        </ul>
+        <div class="container">
+            <div class="column-block">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="column-inline">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="profile.svg" alt="a picture of a profile icon" class="profile">
+            <h2>Sindiswa Mkhize</h2>
+            <h3><a href="https://maps.app.goo.gl/44kj98qakvRUMvxW9">Pietermaritzburg</a>, South Africa </h3>
+            <button>Add Friend</button>
+        </div>
+        <div class="container">
+            <p>A landmark is a notable region of a webpage used to group different types of content.</p>
+        </div>
+        <table> <!--Only use these to display data!-->
+            <thead>
+                <tr>
+                    <th>Language</th>
+                    <th>Motivation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>C#</td>
+                    <td>ASP.NET backend things, Unity</td>
+                </tr>
+                <tr>
+                    <td>Dart</td>
+                    <td>Flutter mobile apps</td>
+                </tr>
+                <tr>
+                    <td>HTML, CSS, and JavaScript</td>
+                    <td>Web development and Angular/React foundations</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Data!</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                <td colspan="2">Visit <a href="https://www.w3.org/TR/html401/struct/tables.html">W3C</a> for more info.</td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="container">
+            <img src="" alt="">
+            <audio src="" controls></audio>
+            <video controls>
+                <source src="" type="">
+                Trouble viewing the video.
+            </video>
+            <!--https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement just incase you don't want to use the browser's default controls-->
+        </div>
+    </main>
+    <form action="" method="post">
+        <label for="name">Full Name: </label>
+        <input type="text" name="name" id="name" placeholder="Sindiswa Mkhize"><!--Using the break element <br/> is actually bad practice.-->
+        <label for="cell-number">Number:</label>
+        <input type="tel" name="number" id="cell-number">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <button type="submit">SUBMIT</button>
+    </form>
+    <aside>
+        <p>Semantics are important!</p>
+    </aside>
+   <footer>
+    Made with &lt;3 by wandadrizzle
+   </footer>
+   <script>
+    //This is embedded JavaScript. When you link to external, also put it here at the end.
+   </script>
+</body>
+</html>
