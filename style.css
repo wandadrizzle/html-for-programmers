@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container p {
+    align-self:flex-start;
+    margin-right: auto; 
+}
+
+.box {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+.column-inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centers boxes horizontally */
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+/* Set specific widths for each column */
+th:nth-child(1),
+td:nth-child(1) {
+    width: 30%;
+}
+th:nth-child(2),
+td:nth-child(2) {
+    width: 70%;
+}
