@@ -6,25 +6,80 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Create A Blog Post List</title>
+  <style>
+    p {
+      color: gray;
+      font-style: italic;
+    }
+    h3 {
+      color: rgb(67, 67, 67);
+    }
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 0.8rem;
+    }
+    .preview-container {
+      display: flex;
+      flex-direction: row;
+      height: 150px;
+    }
+    .text {
+      flex: 0 0 70%;
+      margin-left: 20px;
+    }
+
+    .image {
+    height: 150px; 
+    width: 150px; 
+    background-color: purple;
+    border-radius: 50%;
+    }
+  </style>
 </head>
 
 <body>
   <!-- Text: -->
-  The Art Of Growing Sunflowers - Why It's Not As Easy As You Might Think
-  Known as one of the happiest flowers, sunflowers seem like they'd be easy to grow...or do they.
-  Gardening
-  5 min read
+  <h1 style="text-align: center;">This Week's Blogs</h1>
+  <div class="preview-container">
+    <div class="text">
+      <h2>The Art Of Growing Sunflowers - Why It's Not As Easy As You Might Think</h2>
+      <h3>Known as one of the happiest flowers, sunflowers seem like they'd be easy to grow...or do they.</h3>
+      <h4 style="color: orange;">Gardening</h4>
+      <p>5 min read</p>
+    </div>
+    <div style="background-color: orange;"  class="image"></div>
+  </div>
+  <hr>
+  <div class="preview-container">
+    <div class="text">
+      <h2>4 Ways I've Made Extra Income To Pay Off My Mortgage</h2>
+      <h3>It's not an easy path, but the road to financial freedom sure is worth it.</h3>
+      <h4 style="color: blue;">Finance</h4>
+      <p>8 min read</p>
+    </div>
+    <div style="background-color: blue;"  class="image"></div>
+  </div>
+  <hr>
+  <div class="preview-container">
+    <div class="text">
+      <h2>How To Travel The World Full Time On A Budget</h2>
+      <h3>Tips on how you can travel for cheap and experience the world.</h3>
+      <h4 style="color: green;">Travel</h4>
+      <p>4 min read</p>
+    </div>
+    <div style="background-color: green;"  class="image"></div>
+  </div>
 
-  4 Ways I've Made Extra Income To Pay Off My Mortgage
-  It's not an easy path, but the road to financial freedom sure is worth it.
-  Finance
-  8 min read
 
-  How To Travel The World Full Time On A Budget
-  Tips on how you can travel for cheap and experience the world.
-  Travel
-  4 min read
 
 </body>
 
 </html>
+
+<!--Welp, mine didn't look like theirs.
+1. Spans were used for content and time
+2. They used an actuall image too
+---
+What was right though was the fact that I only had one h1, and I put things in divs.
+Note: where necessary use semantic tags
+-->
