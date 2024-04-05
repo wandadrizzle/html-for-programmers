@@ -9,7 +9,73 @@
 </head>
 
 <body>
-  
+  <table>
+    
+    <tr>
+      <th></th> <!--This should be td-->
+      <th scope="col">Monday</th>
+      <th scope="col">Teusday</th>
+      <th scope="col">Wednesday</th>
+      <th scope="col">Thursday</th>
+      <th scope="col">Friday</th>
+    </tr>
+    <tr>
+      <th scope="row">09:00 to 11:00</th>
+      <td>Open</td>
+      <td>Closed</td>
+      <td>Open</td>
+      <td>Closed</td>
+      <td>Open</td>
+    </tr>
+    <tr>
+      <th scope="row">11:00 to 12:00</th>
+      <td>Closed</td>
+      <td>Open</td>
+      <td>Closed</td>
+      <td>Open</td>
+      <td>Open</td>
+    </tr>
+    <tr>
+      <th scope="row">12:00 to 14:00</th>
+      <td>Open</td>
+      <td>Closed</td>
+      <td>Open</td>
+      <td>Closed</td>
+      <td>Open</td>
+    </tr>
+    <tr>
+      <th scope="row">14:00 to 16:00</th>
+      <td>Open</td>
+      <td>Open</td>
+      <td>Open</td>
+      <td>Open</td>
+      <td>Closed</td>
+    </tr>
+    <tr>
+      <th scope="row">16:00 to 18:00</th>
+      <td>Closed</td>
+      <td>Open</td>
+      <td>Closed</td>
+      <td>Open</td>
+      <td>Closed</td>
+    </tr>
+
+  </table>
+
+
 </body>
 
 </html>
+
+<!--
+In HTML, the scope attribute is used to specify whether a cell in a table is a header cell (th) or a data cell (td) and the extent of its relevance for a set of data cells.
+
+The scope attribute can take the following values:
+
+1. row: This indicates that the cell is a header for a row of cells. It applies to all cells in the same row, from the cell containing the header to the next header cell in the same row, or the end of the row.
+2. col: This indicates that the cell is a header for a column of cells. It applies to all cells in the same column, from the cell containing the header to the next header cell in the same column, or the end of the column.
+3. rowgroup: This indicates that the cell is a header for a group of rows. It applies to all cells in the same row group, from the cell containing the header to the next header cell in the same row group, or the end of the row group.
+4. colgroup: This indicates that the cell is a header for a group of columns. It applies to all cells in the same column group, from the cell containing the header to the next header cell in the same column group, or the end of the column group.
+
+The scope attribute is particularly useful for screen readers and other assistive technologies to understand the structure of tables and present the information in a more accessible way to users with disabilities.
+-->
